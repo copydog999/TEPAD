@@ -1,0 +1,82 @@
+// sim_ui.rc : application resource script.
+//
+// The UI controls are created dynamically in pixels by CSimUiDlg::CreateChildControls, so the template holds only
+// one empty resizable dialog; this keeps the layout and resize logic on the C++ side and avoids DLU conversion error.
+#include "Resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+#include <afxres.h>
+#include <winres.h>
+#undef APSTUDIO_READONLY_SYMBOLS
+
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(65001)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_SIM_UI_DIALOG DIALOGEX 0, 0, 430, 282
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_THICKFRAME
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "TEPAD Simulator"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+END
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "CompanyName", "TEPAD"
+            VALUE "FileDescription", "TEPAD dual-window simulation detector UI (serial/TCP real-time detection)"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "sim_ui"
+            VALUE "LegalCopyright", "Copyright (C) 2026 TEPAD"
+            VALUE "OriginalFilename", "sim_ui.exe"
+            VALUE "ProductName", "TEPAD sim_ui"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_SIM_UI_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 423
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 275
+    END
+END
+#endif    // APSTUDIO_INVOKED

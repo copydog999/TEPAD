@@ -1,0 +1,24 @@
+# MSBuild outputs
+build/
+obj/
+Debug/
+Release/
+x64/
+*.obj
+*.exe
+*.pdb
+*.ilk
+*.exp
+*.lib
+
+# Visual Studio user and cache files
+.vs/
+*.user
+*.suo
+*.vcxproj.user
+ipch/
+*.idb
+
+# Temporary logs
+*_msbuild.txt
+*sln_build.txt

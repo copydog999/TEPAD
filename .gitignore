@@ -1,0 +1,10 @@
+datasets
+autocommit.exe
+research_paper
+.png
+.pdf
+
+# build caches that would otherwise accumulate in every autocommit run
+__pycache__/
+*.py[cod]
+.pytest_cache/

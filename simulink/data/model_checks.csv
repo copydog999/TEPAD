@@ -1,0 +1,4 @@
+check,worst_diff,criterion,result
+"golden replay (720 tick)",3.443200e-09,"deviation <1e-08 and alarm difference = 0 (actual 0)",PASS
+"dual-path agreement (PV Plant vs generate_scenario)",0.000000e+00,"max deviation of g/p/pNormal <1e-08",PASS
+"injection subsystem (spike + shading combined)",0.000000e+00,"model/code injection deviation <1e-08, spike delay = 0 tick",PASS

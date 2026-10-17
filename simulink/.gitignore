@@ -1,0 +1,10 @@
+# Model files and caches are script outputs: the topology lives in src/tepadsim_build_model.m, so regenerate them
+model/*.slx
+model/*.slx.autosave
+# Build outputs and caches (MATLAB writes to the working directory; entry scripts point cwd at simulink/)
+*.slxc
+slprj/
+*.asv
+
+# run_simulink.ps1 writes one console log per run
+logs/
